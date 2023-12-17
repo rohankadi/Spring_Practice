@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD(Documentation type data) file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  
+  <bean class = "com.kodnest.SpringBoot1.Student" id = "st">
+  <!-- Setting values -->
+  <property name = "rollNo" value = "11"></property>
+  <property name="name" value = "Ankit"></property>
+  <property name="yop" value = "2023"></property>
+
+  </bean>
+  </beans>
