@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD(Documentation type data) file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 1st object creation with data -->
+	<bean class="com.kodnest.Spring_Project5.Mobile" id="mob">
+		<property name="brand" value="OnePlus"></property>
+		<property name="ram" value="8"></property>
+		<property name="cost" value="30000"></property>
+	</bean>
+
+	<!-- 2nd object creation with data -->
+	<bean class="com.kodnest.Spring_Project5.Mobile" id="mob2">
+		<property name="brand" value="Xiomi"></property>
+		<property name="ram" value="8"></property>
+		<property name="cost" value="25000"></property>
+	</bean>
+
+	<!-- Injecting one bean into another bean called Person -->
+	<!-- AutoWiring byName-->
+	<bean class="com.kodnest.Spring_Project5.Person" id = "person1" autowire = "byName"></bean>
+</beans>
+  
