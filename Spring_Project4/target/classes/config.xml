@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD(Documentation type data) file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean class = "com.kodnest.Spring_Project4.Trainer" id="trainer1">
+  <property name="t_id" value = "1"></property>
+  <property name="t_name" value = "Ayush Sir"></property>
+  </bean>
+  
+  <bean class = "com.kodnest.Spring_Project4.Trainer" id="trainer2">
+  <property name="t_id" value = "2"></property>
+  <property name="t_name" value = "Puneeth Sir"></property>
+  </bean>
+  
+  <!-- Wiring==> injecting One Beam to another Beam -->
+  <bean class = "com.kodnest.Spring_Project4.KodNestClasses" id = "kodnestclass1">
+  <property name="tr" ref = "trainer2"></property>
+  
+  </bean>
+  
+  </beans>
