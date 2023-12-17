@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD(Documentation type data) file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Setter Injection -->
+	<bean class="com.kodnest.SpringBoot_Project3.Employee" id="emp">
+		<property name="technologies">
+			<list>
+				<value>Java</value>
+				<value>Python</value>
+				<value>Javascript</value>
+			</list>
+		</property>
+
+		<property name="projects">
+			<set>
+				<value>project1</value>
+				<value>project2</value>
+				<value>project3</value>
+			</set>
+		</property>
+
+		<property name="companies">
+			<map>
+				<entry key="1" value="abc"></entry>
+				<entry key="2" value="cde"></entry>
+				<entry key="3" value="xyz"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
+  
